@@ -17,7 +17,6 @@ public class Controller {
 
     @GetMapping("set")
     public String setType(UserSet userSet) {
-        userSet.getUsers().forEach(user -> System.out.println(user.getName()));
         return userSet.getUsers().toString();
     }
 
