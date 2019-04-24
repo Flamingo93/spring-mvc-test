@@ -15,10 +15,22 @@ public class UserSet {
 	public void setUsers(Set<User> users) {
 		this.users = users;
 	}
-	
-	public UserSet(){  
-        users.add(new User());  
-        users.add(new User());  
-        users.add(new User());  
+
+    /**
+     *
+     * Use set as spring mvc param need init here.
+     *
+     */
+	public UserSet(){
+        users.add(new User());
+        users.add(new User());
+        users.add(new User());
     }
+
+	@Override
+	public String toString() {
+		return "UserSet{" +
+				"users=" + users +
+				'}';
+	}
 }

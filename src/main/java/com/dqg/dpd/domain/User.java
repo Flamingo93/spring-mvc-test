@@ -1,10 +1,6 @@
 package com.dqg.dpd.domain;
 
 public class User {
-
-    String name;
-	public static class UserNode{
-
 		private String name;
 		private int age;
 		private Address address;
@@ -31,5 +27,4 @@ public class User {
 		public String toString() {
 			return "UserNode [name=" + name + ", age=" + age + "]";
 		}
-	}
 }
